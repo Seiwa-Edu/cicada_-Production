@@ -7,19 +7,28 @@
       
             <ul>
               <% micropost.errors.full_messages.each do |message| %>
-                <li><%= message %></li>
+                <li class="message_list"><%= message %></li>
               <% end %>
             </ul>
           </div>
         <% end %>
       
         <div class="field">
-          <%= form.label :content %>
-          <%= form.text_area :content %>
+          
+          <!--テキストグラフィカリー-->
+              <div class="main">
+          			  <div class="text">What is Covid to you?</div>		
+           			  <div class="shadow">
+          				    <div  class="viewport">
+          					      <div class="text">What is Covid to you?</div>
+          				    </div>
+             			</div>
+    		　　　</div>
+          <%= form.text_area :content, class: "label_area" %>
         </div>
       
         <div class="actions">
-          <%= form.submit %>
+          <%= form.submit 'Send', class: "subimit_btn"%>
         </div>
       <% end %>
   </div>
