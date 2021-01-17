@@ -74,7 +74,7 @@
 
 
 /*ビデオスタートの追加*/
-.startVideo {
+#movieButton {
 	background-color: black;
 	position: fixed;
 	top: 0;
@@ -84,7 +84,7 @@
 	z-index: 9000;
 }
 
-.startVideo p {
+#movieButton p {
 	position: fixed;
 	left: 50%;
 	top: 50%;
