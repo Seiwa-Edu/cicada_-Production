@@ -4,9 +4,11 @@
 
 <a id="movieButton"><p><%= image_tag "play.png" %></p></a>
 
-<video id ="movie_invalid" loop>
-  <source src="http://d23fto7fuil342.cloudfront.net/2021_INVALID_0111.mp4" type="video/mp4">
-</video>
+<!--<video id ="movie_invalid" loop>-->
+<!--  <source src="http://d23fto7fuil342.cloudfront.net/2021_INVALID_0111.mp4" type="video/mp4">-->
+<!--</video>-->
+
+<video id ="movie_invalid"  src="http://d23fto7fuil342.cloudfront.net/2021_INVALID_0111.mp4" loop></video>
 
 <tbody>
     <% @microposts.each do |micropost| %>
@@ -27,14 +29,14 @@
   		$('.start').fadeOut(1600);
   	},1600); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
   	setTimeout(function(){
-  		$('#movieButton p').fadeIn(2500);
-  	},500); //0.5秒後にロゴをフェードイン!
+  		$('#movieButton p').fadeIn(1600);
+  	},3500); //0.5秒後にロゴをフェードイン!
   });
   
   $('#movieButton').click(function() {
     	$("#movie_invalid")[0].play();
     	setTimeout(function(){
-  		$('#movieButton p').fadeOut(1600);
+  		$('#movieButton').fadeOut(1600);
   	},1000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
 })
 </script>
