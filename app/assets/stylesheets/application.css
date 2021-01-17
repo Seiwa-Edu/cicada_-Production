@@ -13,3 +13,40 @@
  *= require_tree .
  *= require_self
  */
+ 
+ body {
+  background-color: black;
+  position: relative;
+   margin: 0;
+   width: 100%;
+   height: 100vh;
+}
+
+#movie_invalid {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.form_elemnt{
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  width: 100%;
+  height: 100vh
+}
+
+.field {
+  margin: 0;
+}
+
+.form-content {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  
+}
