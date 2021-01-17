@@ -34,10 +34,16 @@
   });
   
   $('#movieButton').click(function() {
-    	$("#movie_invalid")[0].play();
-    	setTimeout(function(){
+    
+    setTimeout(function(){
   		$('#movieButton').fadeOut(1600);
-  	},1000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+  	    },1000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+       $(function(){
+      	setTimeout(function(){
+      		$("#movie_invalid")[0].play();
+      	},3000);
+      });
+    	
 })
 </script>
 
