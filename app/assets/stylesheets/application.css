@@ -65,9 +65,10 @@
 	border: none;
 	font-size: 25px;
 	font-family: 'Noto Serif', serif;
+	transition: all 3s;
 }
 
-.subimit_btn:hove{
+.subimit_btn:hover{
 	background-color: white;
 	color: black;
 	/*border: 2px solid black;*/
@@ -91,28 +92,30 @@
 	width: 30%;
 	height: 30px;
 	display: block;
+	font-family: 'Noto Serif', serif;
+	font-weight: bold;
 }
 
 /*初期画像の追加*/
-.start {
-	background-color: black;
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 9000;
-}
+/*.start {*/
+/*	background-color: black;*/
+/*	position: fixed;*/
+/*	top: 0;*/
+/*	left: 0;*/
+/*	height: 100%;*/
+/*	width: 100%;*/
+/*	z-index: 9000;*/
+/*}*/
 
-.start p {
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	display: none;
-	z-index: 9999;
-	width: 280px;
-}
+/*.start p {*/
+/*	position: fixed;*/
+/*	left: 50%;*/
+/*	top: 50%;*/
+/*	transform: translate(-50%, -50%);*/
+/*	display: none;*/
+/*	z-index: 9999;*/
+/*	width: 280px;*/
+/*}*/
 
 
 /*ビデオスタートの追加*/
