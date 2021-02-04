@@ -45,26 +45,27 @@
 //参考
 // https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12183688332
 　// テキストのランダム表示
-　let mojiume = new Object();
-　mojiume.list = [
+  var mojiume = new Object();
+  mojiume.list = [
   "あ", "い", "う", "え", "お",
   "か", "き", "く", "け", "こ",
   "さ", "し", "す", "せ", "そ",
   "た", "ち", "つ", "て", "と"
   ];
   mojiume.count = 0;
-  mojiume.limit = 10;
-  console.log('hey')
+  mojiume.limit = 1000;
   mojiume.set = function(){
-    console.log('hey')
-    let span = document.Element("span");
-    span.className = "mojiume";
-    // ランダム位置に配置
-    span.style.left = ( Math.random()*100 )+"%";
-    span.style.top =( Math.random()*100 )+"%";
-    // 文字リストの先頭から順番に表示
-    span.textContent = mojiume.list[ ( mojiume.count++)%mojiume.list.length ];
-    document.body.appendChild( span );
-    mojiume.tmr = setInterval( mojiume.set, 500 );
+      var span = document.createElement("span");
+      span.className = "mojiume";
+      span.style.left = ( Math.random()*100 )+"%";
+      span.style.top =( Math.random()*100 )+"%";
+      span.textContent =
+      mojiume.list[ ( mojiume.count++)%mojiume.list.length ];
+      document.body.appendChild( span );
+      if( document.querySelectorAll(".mojiume").length>=mojiume.limit ){
+      clearInterval( mojiume.tmr );
   }
+  };
+  mojiume.tmr = setInterval( mojiume.set, 500 );
+
 </script>
