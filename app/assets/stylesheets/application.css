@@ -288,3 +288,16 @@
     opacity: 1;
   }
 }
+
+
+/*ランダム文字のcss*/
+.mojiume{
+display: flex;
+align-items: center;
+justify-content: center;
+position: fixed;
+width: 0px;
+height: 0px;
+overflow: visible;
+font-size: 32px;
+}
