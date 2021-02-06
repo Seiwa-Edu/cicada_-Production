@@ -38,7 +38,7 @@
   align-items: flex-end;
   flex-direction: row;
   position: absolute;
-  z-index: 999;
+  z-index: 9991;
   top: 0;
   left: 0;
   justify-content: center;
@@ -126,7 +126,7 @@
 	left: 0;
 	height: 100%;
 	width: 100%;
-	z-index: 9000;
+	z-index: 9998;
 }
 
 #movieButton p {
@@ -300,6 +300,6 @@ width: 0px;
 height: 0px;
 overflow: visible;
 font-size: 32px;
-z-index: 9999;
+z-index: 9990;
 font-family: 'Noto Serif', serif;
 }
