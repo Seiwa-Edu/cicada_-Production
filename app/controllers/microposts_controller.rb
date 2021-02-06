@@ -5,7 +5,7 @@ class MicropostsController < ApplicationController
   # GET /microposts.json
   def index
     @microposts = Micropost.all
-    gon.user_name = "user_name"
+    # gon.user_name = "user_name"
   end
 
   # GET /microposts/1
