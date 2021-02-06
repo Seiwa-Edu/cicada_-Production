@@ -17,6 +17,7 @@ class MicropostsController < ApplicationController
   def new
     @microposts = Micropost.all
     @micropost = Micropost.new
+    gon.user_name = 'テスト太郎'
   end
 
   # GET /microposts/1/edit
