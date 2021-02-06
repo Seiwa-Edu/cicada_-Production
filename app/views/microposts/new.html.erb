@@ -43,22 +43,29 @@
 })
 
 //参考
+// pattern1
 //https://stackoverflow.com/questions/30420968/how-to-use-the-gon-gem-to-show-database-values-rather-than-objects
-var renderedUsers = JSON.stringify(gon.micropost);
+// var renderedUsers = JSON.stringify(gon.micropost);
+// alert(renderedUsers);
+// pattern1 + α
 // alert(renderedUsers);
 // var obj = JSON.parse(renderedUsers);
-alert(renderedUsers);
 
 //参考
 // https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12183688332
 　// テキストのランダム表示
-  var mojiume = new Object();
-  mojiume.list = [
-  "あ", "い", "う", "え", "お",
-  "か", "き", "く", "け", "こ",
-  "さ", "し", "す", "せ", "そ",
-  "た", "ち", "つ", "て", "と"
-  ];
+  // var mojiume = new Object();
+  // mojiume.list = [
+  // "あ", "い", "う", "え", "お",
+  // "か", "き", "く", "け", "こ",
+  // "さ", "し", "す", "せ", "そ",
+  // "た", "ち", "つ", "て", "と"
+  // ];
+  
+  // var mojiume = new Object();
+  // var mojiume.list = gon.microposts 
+  
+  var mojiume = gon.microposts
   mojiume.count = 0;
   mojiume.limit = 50;
   mojiume.set = function(){
@@ -67,7 +74,8 @@ alert(renderedUsers);
       span.style.left = ( Math.random()*100 )+"%";
       span.style.top =( Math.random()*100 )+"%";
       span.textContent =
-      mojiume.list[ ( mojiume.count++)%mojiume.list.length ];
+      // mojiume.list[ ( mojiume.count++)%mojiume.list.length ];
+      mojiume[ ( mojiume.count++)%mojiume.length ];
       document.body.appendChild( span );
       if( document.querySelectorAll(".mojiume").length>=mojiume.limit ){
       clearInterval( mojiume.tmr );
