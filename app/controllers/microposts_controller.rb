@@ -18,7 +18,10 @@ class MicropostsController < ApplicationController
     @microposts = Micropost.all
     @micropost = Micropost.new
     # gon.user_name = 'テスト太郎'
-    gon.micropost = Micropost.all.as_json
+    # https://stackoverflow.com/questions/30420968/how-to-use-the-gon-gem-to-show-database-values-rather-than-objects
+    # gon.micropost = Micropost.all.as_json
+    # コンテントだけ取得
+    gon.micropost = Micropost.all.as_json(only: [:content])
   end
 
   # GET /microposts/1/edit
