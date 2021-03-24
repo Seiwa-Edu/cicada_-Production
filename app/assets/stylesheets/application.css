@@ -139,7 +139,7 @@ body {
 #movieButton {
   top: 0;
   left: 0;
-  z-index: 1000;
+  /* z-index: 9999; */
 }
 
 /*投稿したコンテンツの内容*/
