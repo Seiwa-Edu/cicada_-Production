@@ -1,0 +1,15 @@
+current directory: /Users/seiwa/Downloads/environment/Invalid_cicada/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/seiwa/.rbenv/versions/2.6.3/bin/ruby -I /Users/seiwa/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20210324-3476-1noekt8.rb extconf.rb
+creating Makefile
+
+current directory: /Users/seiwa/Downloads/environment/Invalid_cicada/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/seiwa/Downloads/environment/Invalid_cicada/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/seiwa/Downloads/environment/Invalid_cicada/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20210324-3476-1tz4mt2/skiptrace/internal

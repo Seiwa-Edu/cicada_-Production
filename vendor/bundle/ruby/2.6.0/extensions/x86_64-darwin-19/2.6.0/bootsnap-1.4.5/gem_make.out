@@ -1,0 +1,15 @@
+current directory: /Users/seiwa/Downloads/environment/Invalid_cicada/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.5/ext/bootsnap
+/Users/seiwa/.rbenv/versions/2.6.3/bin/ruby -I /Users/seiwa/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20210324-3476-1au3eyc.rb extconf.rb
+creating Makefile
+
+current directory: /Users/seiwa/Downloads/environment/Invalid_cicada/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.5/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/seiwa/Downloads/environment/Invalid_cicada/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.5/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/seiwa/Downloads/environment/Invalid_cicada/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.5/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20210324-3476-k3krp7/bootsnap
